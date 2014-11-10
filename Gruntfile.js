@@ -7,17 +7,17 @@ module.exports = function (grunt) {
 
   grunt.initConfig({
     jshint: {
-      src:['Gruntfile.js'],
+      src: ['Gruntfile.js', 'server.js'],
       options: {
-        node: true
+        jshintrc: true
       }
     },
 
     simplemocha: {
-      src:['test/*.js']
+      src: ['./test/*.js']
     }
   });
 
   grunt.registerTask('test', ['jshint', 'simplemocha']);
-
+  grunt.registerTask('default', ['test']);
 };

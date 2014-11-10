@@ -12,7 +12,6 @@ app.post('/:user', function (req, res) {
   var ws = fs.createWriteStream(file + req.params.user + '.json');
   ws.write(JSON.stringify(req.body));
   ws.end();
-  res.writeHead(200, {'Content-Type': 'application/json'});
   res.json(req.body);
 });
 
