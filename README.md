@@ -1,1 +1,1 @@
-![alt tag]([https://travis-ci.org/JakeRawr/jsonDatabase.svg])
+![alt tag](https://travis-ci.org/JakeRawr/jsonDatabase.svg)
